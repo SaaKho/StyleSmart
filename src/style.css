@@ -1,0 +1,2872 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Barlow+Semi+Condensed:wght@400;600;700&family=Pacifico&display=swap");
+
+/* font-family: 'Andika', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Pacifico', cursive; */
+body {
+  background: var(--Background, #f4f4f4);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Pacifico", cursive;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+
+button {
+  font-family: "Andika", sans-serif;
+  font-weight: 700;
+}
+button.btnSimple {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+button.btnSimple:hover {
+  background-color: #3a81ba;
+}
+button.btnrgtn {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  width: 145px;
+  padding: 8px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-trunks, #595d62);
+  background-color: transparent;
+}
+button.btnrgtn:hover {
+  background-color: #3a81ba;
+  color: white;
+}
+
+button.btnPrfSubmit {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: var(--primary-10, #4b8bbe);
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px;
+  width: 145px;
+}
+button.btnPrfSubmit:hover {
+  background-color: #3a81ba;
+}
+input.renameWrb {
+  border-radius: var(--Interactive-border-radius---radius-i-sm, 8px);
+  border: 1px solid var(--Main-beerus, #e2e2e2);
+  background: var(--Main-gohan, #fff);
+  padding: 12px;
+  width: 100%;
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Set the background color of the track */
+  border-radius: 50px;
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the handle */
+  border-radius: 50px;
+}
+
+button.btnPrimary {
+  font-size: 1rem;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 456px;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    #5754f3 -8.73%,
+    #4b8bbe 16.83%,
+    #ba4788 41.83%,
+    #3a81ba 65.13%,
+    #6cb8c4 91.83%
+  );
+  border: none;
+  background-size: 500% 100%; /* Adjust the value for your needs */
+  animation: gradientAnimation 5s linear infinite;
+  position: relative;
+  z-index: 1;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.signmainBox {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, #4b8bbe, #4e46b4, #6cb8c4);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.signbox1 {
+  background-image: url(../public/images/signup-lft-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  border-radius: 0px 0px 100px 0px;
+  padding: 4rem 4rem 4rem 0;
+}
+.sign-up-component {
+  position: fixed;
+  z-index: 99;
+  right: -140%;
+  top: 0;
+  transition: all 0.5s;
+  width: 85%;
+}
+.sign-up-component.toggled {
+  right: 0;
+  transition: all 0.5s;
+}
+.close-btnn {
+  position: absolute;
+  top: 10px;
+  left: 21px;
+  background-color: transparent;
+  border: none;
+}
+
+.signbox1 .content {
+  margin-bottom: 2.6rem;
+  padding-left: 1.8rem;
+}
+
+.signbox1 h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #4e46b4 -18.44%, #4b8bbe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 25px;
+}
+
+.signbox1 form {
+  max-width: 486px;
+  padding: 50px 50px 50px 40px;
+  border-radius: 0px 50px 50px 0px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.signbox1 form input {
+  padding: 12px;
+  color: #858585;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+}
+
+.loginModal form input {
+  padding: 12px;
+  color: #858585;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+}
+
+button.btnsign {
+  background-color: #4b8bbe;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  padding: 12px 16px;
+}
+
+.btncontinue {
+  color: #333333;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #4e46b4;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+.btncontinue:hover {
+  color: #fff;
+  background-color: #4b8bbe;
+}
+
+.signbox1 form .havean {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signbox1 form .havean p {
+  font-size: 1rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #333333;
+  margin-right: 12px;
+}
+
+.signbox1 form .havean button {
+  font-size: 14px;
+  font-family: "Andika", sans-serif;
+  color: #4b8bbe;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+}
+
+.signbox1 form .havean button:hover {
+  background-color: transparent;
+  color: #4b8bbe;
+}
+
+.signbox2 .logo {
+  display: flex;
+  justify-content: end;
+  padding: 2rem 2.4rem 3rem 0;
+  opacity: 0.8;
+}
+
+.signbox2 .signupAnimation {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.signbox2 .staticImg {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0px 100px 100px 0px;
+  max-width: 670px;
+  margin-bottom: 4rem;
+  overflow-x: hidden;
+}
+
+.signbox2 .staticImg img {
+  max-width: 160px;
+  width: 100%;
+}
+
+.signbox2 p {
+  font-size: 2.25rem;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.loginModal h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #4e46b4 -18.44%, #4b8bbe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.modal.loginModal {
+  --bs-modal-width: 610px;
+}
+
+.modal.loginModal .modal-content {
+  border-radius: 50px;
+  background: linear-gradient(213deg, #d5f7fd 13.56%, #b4c4ff 98.03%);
+  padding: 30px;
+}
+
+.loginModal p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  font-family: "Andika", sans-serif;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.loginModal form {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px 30px 10px;
+}
+
+/* -------------welcome screen------------ */
+.welcomHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 10px 15px;
+}
+.welcomHeader img.mblWelcomescreen {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.welcomHeader h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #4e46b4 -18.44%, #4b8bbe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcomHeader .makeAccount {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: #eeedfe;
+  padding: 16px 20px;
+}
+
+.welcomHeader .makeAccount p {
+  font-size: 1.25rem;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin-right: 1.5rem;
+}
+
+.welcomHeader .makeAccount button:nth-child(2) {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  font-family: "Andika", sans-serif;
+  background-color: transparent;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--text-100, #333);
+  margin-right: 12px;
+  padding: 8px 16px;
+}
+
+.welcomHeader .makeAccount button:nth-child(3) {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Andika", sans-serif;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: var(--primary-10, #4b8bbe);
+  padding: 8px 16px;
+}
+
+.welcomMain {
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+/* --------Card-------- */
+.loveCrd {
+  position: relative;
+  padding: 10px 12px 102px;
+  border-radius: 8px;
+  background: var(--text-5, #fafafa);
+  /* width: 323px;
+  height: 210px; */
+}
+
+.cardBox h2 {
+  font-size: 1.75rem;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.cardBox {
+  position: relative;
+  margin-bottom: 55px;
+  text-align: center;
+  padding: 30px;
+}
+.cardBox img.leftBgsvg {
+  position: absolute;
+  bottom: -76px;
+  left: 0;
+}
+
+.loveCrd .prIcon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loveCrd .prIcon img {
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  border: 2px solid #fff;
+  background-color: lightgray 50%;
+}
+
+.loveCrd p.discription {
+  font-size: 14px;
+  color: #5c5c5c;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  max-height: 3em;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.loveCrd .RatingBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 17px 0;
+}
+
+.loveCrd .RatingBox p.point {
+  font-size: 10px;
+  font-weight: 500;
+  color: #333333;
+  margin-left: 4px;
+}
+
+.loveCrd .RatingBox h3 {
+  font-size: 12px;
+  color: #4b8bbe;
+  font-weight: 400;
+}
+
+.loveCrd .fctr-Brand {
+  border-radius: 8px;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16);
+  padding: 12px;
+  position: absolute;
+  bottom: -15px;
+  left: 12px;
+  right: 12px;
+}
+
+.loveCrd .fctr-Brand img {
+  width: 62px;
+  height: 80px;
+}
+
+.loveCrd .fctr-Brand p {
+  font-size: 12px;
+  color: #333333;
+  font-family: "Andika", sans-serif;
+  font-weight: 700;
+  text-align: start;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  max-height: 3em;
+}
+
+.loveCrd .fctr-Brand span {
+  padding: 0 2px;
+  border-radius: 3.014px;
+  background: linear-gradient(
+    90deg,
+    #d7f3ff 0%,
+    rgba(215, 243, 255, 0.44) 100%
+  );
+}
+
+.loveCrd .fctr-Brand span.prcLevel {
+  font-size: 9px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Andika", sans-serif;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--interactive-border-radius-radius-i-xs, 4px);
+  background: var(--Accent, #f06292);
+  padding: 2px 8px 2px 3px;
+}
+
+.loveCrd .fctr-Brand span.prcLevel img {
+  width: 12px;
+  height: 12px;
+}
+
+.loveCrd .fctr-Brand span.brndLogo img {
+  height: 10px;
+}
+.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper {
+  max-width: 650px;
+  padding: 25px 0;
+}
+/* ---------brand choose----------- */
+.brandChoose h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5c5c5c;
+  padding-top: 26px;
+}
+
+.brandChoose h2 span {
+  font-family: "Andika", sans-serif;
+}
+
+.brandChoose .Choose {
+  margin: 40px auto;
+  max-width: 1166px;
+}
+
+.brandChoose .Choose .swiper-slide img {
+  padding: 17px;
+  max-height: 60px;
+  border-radius: 17.127px;
+  border: 1.07px solid var(--text-20, #d6d6d6);
+}
+
+.brandchoseBox {
+  border-radius: 40px 40px 0px 0px;
+  background: #fff;
+  /* box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 12px 12px -6px rgba(0, 0, 0, 0.16); */
+  position: relative;
+}
+
+/* ------------choose ChooseCategory------- */
+.ChooseCategory .topdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 750px;
+  margin: 20px auto;
+}
+
+.ChooseCategory .topdiv h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+.ChooseCategory .topdiv h2 span {
+  font-family: "Andika", sans-serif;
+}
+
+.ChooseCategory .category {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1166px;
+  margin: 10px auto 20px;
+}
+
+.ChooseCategory .category .hrline {
+  height: 132px;
+  width: 1px;
+  background-color: #d6d6d6;
+}
+
+.ChooseCategory .category .SecondSlide,
+.ChooseCategory .category .firstSlide {
+  flex: 1;
+}
+
+.ChooseCategory .category .firstSlide img {
+  width: 137px;
+  height: 175px;
+  border-radius: 8px;
+}
+
+.ChooseCategory .category .firstSlide p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #5c5c5c;
+}
+
+.ChooseCategory .category .SecondSlide img {
+  width: 137px;
+  height: 175px;
+  border-radius: 8px;
+}
+
+.ChooseCategory .category .SecondSlide p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #5c5c5c;
+}
+
+.category.row [class*="col-"]:nth-of-type(1) {
+  border-right: 1px solid #d6d6d6;
+}
+
+.welcomMain img.rightBgsvg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.welcomMain .brandchoseBox img.leftBgsvg {
+  position: absolute;
+  top: -197px;
+  left: 0;
+}
+
+.ChooseCategory .category img.noFounditems {
+  width: 153px;
+  height: 91px;
+}
+
+/* ------create wardrobe guest-------- */
+.crtWrdbMain {
+  background-color: var(--Background, #f4f4f4);
+  padding-bottom: 40px;
+}
+.crtWrdbHeader {
+  display: flex;
+  padding-top: 20px;
+}
+.crtWrdbHeader img.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 5rem;
+}
+.crtWrdbHeader .WrdbHeaderBox {
+  margin: 40px 0 0;
+}
+.crtWrdbHeader .WrdbHeaderBox h2.createWrdb {
+  font-size: 3rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #4e46b4 -18.44%, #4b8bbe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.crtWrdbHeader .WrdbHeaderBox h2.updateWrdrb {
+  color: var(--Text-100, #333);
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+.crtWrdbHeader .HomeHdr h2 {
+  color: var(--Text-100, #333);
+  font-size: 3rem;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0;
+}
+.crtWrdbHeader .WrdbHeaderBox p {
+  font-size: 1.75rem;
+  font-style: italic;
+  color: #5c5c5c;
+}
+.guestSidebar {
+  padding: 0 0 0 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100dvh - 350px);
+}
+.guestSidebar ul {
+  display: inline-flex;
+  padding: 20px 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 20px;
+  background: var(--White, #fff);
+  width: 60px;
+  height: 136px;
+}
+.guestSidebar ul li:first-child {
+  display: flex;
+  padding: var(--py-3, 12px) var(--px-3, 12px);
+  align-items: center;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: linear-gradient(135deg, #4e46b4 22.57%, #4b8bbe 124.39%);
+}
+.guestgenrete-Form {
+  padding: 40px 30px 0 0;
+}
+.guestgenrete-Form .poopOverinfo button {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: var(--main-heles, rgba(0, 0, 0, 0.04));
+  padding: 4px;
+  border: none;
+}
+.guestgenrete-Form .poopOverinfo button:active {
+  background-color: white;
+}
+.popover-body {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: var(--main-gohan, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+.accordion {
+  padding: 20px 30px;
+  border-radius: var(--paddings-gaps-p-4, 16px);
+  background: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(240, 98, 146, 0.4),
+    0px 8px 24px -6px rgba(240, 98, 146, 0.16);
+  border: none;
+  margin-bottom: 20px;
+}
+.accordion .card {
+  border: none;
+}
+.accordion .card-header {
+  background-color: white;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.accordion .card-header button {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background-color: #ebebeb !important;
+  border: none;
+}
+/* .accordion .card-header button.btnExpand {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background-color: #ebebeb !important;
+  border: none;
+} */
+.accordion .card-header span.gnrspan {
+  font-size: 1.3rem;
+  color: #333333;
+  font-family: "Andika", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.accordion .card-header span.tagg {
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  padding: 4px 8px 4px 4px;
+  border-radius: var(--interactive-border-radius-radius-i-xs, 4px);
+  background: var(--secondary-30, #4e46b4);
+  margin-right: 10px;
+}
+.accordion .card-header span.tagg img {
+  margin-right: 6px;
+}
+.accordion .card-header p.prvd {
+  font-size: 1rem;
+  color: #5c5c5c;
+}
+.accordion .imageGenrat.card .upldItem {
+  border-radius: var(--paddings-gaps-p-4, 16px);
+  border: 2px dashed var(--text-60, #858585);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.accordion .imageGenrat.card .card-body button.btUploadImg {
+  background-color: transparent;
+  text-align: center;
+  border: none;
+}
+.accordion .imageGenrat.card .card-body button.btUploadImg p {
+  font-size: 1rem;
+  color: #5c5c5c;
+}
+.accordion .imageGenrat.card .uplod-progress.progress {
+  width: 250px;
+  height: 8px;
+  --bs-progress-bar-bg: #4b83bd;
+}
+.socialGenrat.card .card-body input {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-beerus, #e2e2e2);
+  background: var(--main-gohan, #fff);
+  padding: 12px 12px 12px 50px;
+}
+.socialGenrat.card .card-body img.inptlogo {
+  position: absolute;
+  top: 14px;
+  left: 28px;
+}
+.accordion .card-header p.acnumber span:first-child {
+  font-size: 1.25rem;
+  color: #333333;
+}
+.accordion .card-header p.acnumber span:nth-child(2) {
+  font-size: 1.25rem;
+  color: #858585;
+}
+.preferencesGenrat.card .Gender strong {
+  font-size: 1rem;
+  color: #333333;
+  font-family: "Andika", sans-serif;
+  margin-bottom: 12px;
+  display: block;
+}
+.preferencesGenrat.card .Gender button {
+  padding: 8px;
+  color: #333333;
+  font-size: 14px;
+  font-family: "Andika", sans-serif;
+  font-weight: 700;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--text-100, #333);
+  background-color: transparent;
+  width: 90px;
+}
+.preferencesGenrat.card .Gender button.active {
+  color: #4b8bbe;
+  border: 1px solid var(--primary-10, #4b8bbe);
+  background: var(--primary-shades-20, #e6eff6);
+}
+.preferencesGenrat.card .card-header button.btnRemove {
+  font-size: 14px;
+  color: #962d2d;
+  font-family: "Andika", sans-serif;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--Alert, #962d2d);
+  margin-right: 12px;
+  background-color: transparent !important;
+}
+.accordion.prfrnceNested {
+  border-radius: var(--surface-border-radius-radius-s-sm, 8px);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16) !important;
+  padding: 10px 0 0 0;
+}
+.accordion.prfrnceNested .card-header {
+  padding: 10px;
+}
+.accordion.prfrnceNested .nestedAcrdn.card-body {
+  background: var(--main-gohan, #fafafa);
+  border-radius: 12px;
+}
+.prfrnceNested .nestedAcrdn button.searchIcon {
+  background-color: transparent;
+  padding: 0 5px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-beerus, #e2e2e2);
+  border-right: none;
+}
+.prfrnceNested .nestedAcrdn input.searchInput.form-control {
+  color: var(--text-80, #5c5c5c);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-beerus, #e2e2e2);
+  background: var(--main-gohan, #fff);
+  padding: 4px;
+  border-left: none;
+  border-right: none;
+}
+.nestedAcrdn input.searchInput.form-control:focus {
+  box-shadow: none;
+}
+.prfrnceNested .nestedAcrdn button.srchClr {
+  background-color: transparent;
+  color: #333333;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-beerus, #e2e2e2);
+  border-left: none;
+  color: var(--text-80, #5c5c5c);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+}
+.prfrnceNested .nestedAcrdn label.form-label {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1rem;
+}
+.multi-range-slider .bar-right {
+  width: 25%;
+  background-color: #d5d0d0;
+  border-radius: 0px 10px 10px 0px;
+  /* box-shadow: inset 0px 0px 5px black; */
+}
+.multi-range-slider .bar-inner {
+  background-color: #4b8bbe;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: space-between;
+  position: relative;
+  /* border: solid 1px black; */
+  justify-content: space-between;
+  /* box-shadow: inset 0px 0px 5px black; */
+}
+.multi-range-slider .thumb::before {
+  content: "";
+  background-color: inherit;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: none;
+  box-shadow: none;
+  border-radius: 50%;
+  z-index: 1;
+  margin: -2px 0px;
+  cursor: pointer;
+}
+.multi-range-slider .thumb .caption * {
+  position: absolute;
+  min-width: 30px;
+  height: 30px;
+  font-size: 75%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #4b8bbe;
+  border-radius: 15px;
+  border: 2px solid white;
+  color: white;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+  padding: 0px 5px;
+  white-space: nowrap;
+}
+.prfrnceNested .nestedAcrdn .dropdown-toggle::after {
+  display: none;
+}
+.prfrnceNested .nestedAcrdn button#input-group-dropdown-2 {
+  background-color: transparent;
+  border-color: #dee2e6;
+  border-left: none;
+}
+
+.prfrnceNested .nestedAcrdn input.selectSize.form-control {
+  color: var(--text-80, #5c5c5c);
+  font-family: Barlow Semi Condensed;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-beerus, #e2e2e2);
+  background: var(--main-gohan, #fff);
+  padding: 8px 12px;
+  border-right: none;
+}
+button.addPerafrence {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--text-100, #333);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+button.addPerafrence:active {
+  background-color: white !important;
+  color: var(--text-100, #333);
+  border: 1px solid var(--text-100, #333);
+}
+button.addPerafrence:hover {
+  background-color: white !important;
+  color: var(--text-100, #333);
+  border: 1px solid var(--text-100, #333);
+}
+.genratedResult {
+  position: relative;
+  /* Other styles for your container if needed */
+}
+
+.genratedResult::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../public/images/genrate-result-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: rotateAndChangeColor 14s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotateAndChangeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.BasedUponPrfrnc p.discptn {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1.125rem;
+}
+.givenPrefrnc img.picIcon {
+  border-radius: 30px;
+  background: var(--White, #fff);
+  padding: 8px;
+}
+.givenPrefrnc p.imageURL {
+  color: var(--Accent, #f06292);
+  font-family: Barlow Semi Condensed;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  background: var(--White, #fff);
+  padding: 8px 16px;
+}
+.givenPrefrnc img.selectedImage {
+  border-radius: 4px;
+  background: #fff;
+  padding: 2px;
+  width: 36px;
+  height: 36px;
+}
+.givenPrefrnc img.socialLink {
+  border-radius: 30px;
+  background: #fff;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+}
+.givenPrefrnc button.linksRslt {
+  border-radius: 30px;
+  padding: 8px;
+  border: none;
+  background: var(--White, #fff);
+}
+.givenPrefrnc p.whoLink {
+  border-radius: 30px;
+  padding: 8px 16px;
+  background: var(--White, #fff);
+}
+.givenPrefrnc button.PrfrncResult {
+  border-radius: 30px;
+  padding: 8px;
+  border: none;
+  background: var(--White, #fff);
+}
+.givenPrefrnc p.muchPrfrnc {
+  color: var(--Accent, #f06292);
+  font-family: Barlow Semi Condensed;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  background: var(--White, #fff);
+  padding: 8px 16px;
+}
+.yourWardrobe {
+  padding: 25px 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.yourWardrobe h3.yur {
+  font-size: 1.5rem;
+  color: var(--primary-10, #4b8bbe);
+  margin: 0 0 20px;
+}
+.yourWardrobe p.yur {
+  color: var(--Text-100, #333);
+  font-size: 1.125rem;
+  font-family: "Andika", sans-serif;
+}
+.yourWardrobe .wrdbCheck {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.yourWardrobe .wrdbCheck input.form-check-input {
+  border: 1px solid #595d62;
+}
+.yourWardrobe .youWrdrbInner {
+  padding: 20px 50px;
+  border-radius: var(--paddings-gaps-p-4, 16px);
+  background: linear-gradient(
+    180deg,
+    #eff7fc 0%,
+    rgba(239, 247, 252, 0) 130.63%
+  );
+  /* max-width: 1076px; */
+}
+.swiper.swiper-initialized.swiper-horizontal.swiper-grid.mySwiperRst {
+  position: static !important;
+}
+.swiper.mySwiperRst .swiper-button-next {
+  right: -45px;
+  left: auto;
+  top: 169px;
+}
+.swiper.mySwiperRst .swiper-button-prev {
+  left: -45px;
+  right: auto;
+  top: 169px;
+}
+.yourWardrobe p.gnrtDiscrptn {
+  color: var(--text-80, #5c5c5c);
+  font-family: Barlow Semi Condensed;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.yourWardrobe button.regenrete {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-trunks, #595d62);
+  background-color: transparent;
+  /* float: right; */
+  /* transform: translate(0, -41px); */
+}
+.yourWardrobe button.saveWrdrb {
+  display: flex;
+  width: 182px;
+  padding: var(--paddings-gaps-p-2, 8px) var(--paddings-gaps-p-4, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-0, 0px);
+  border-radius: var(--Interactive-border-radius---radius-i-sm, 8px);
+  background-color: var(--primary-10, #4b8bbe);
+  border: none;
+  z-index: 9;
+}
+.yourWardrobe .prfrncResult button.resultImg {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16);
+  border: none;
+  width: 100%;
+  padding: 12px;
+  position: relative;
+}
+.fade.productDtlMdl.modal.show p.rmvPrdct {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.fade.productDtlMdl.modal.show .dtlTagg span.tagg {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--text-100, #333);
+  padding: 8px 16px;
+}
+.fade.productDtlMdl.modal.show p.tellResn {
+  color: var(--text-100, #333);
+  font-size: 1.125rem;
+  font-family: "Andika", sans-serif;
+  margin: 0 0 12px;
+}
+.fade.productDtlMdl.modal.show p.infoDis {
+  color: var(--Text-80, #5c5c5c);
+  font-family: Barlow Semi Condensed;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.fade.productDtlMdl.modal.show button.btnPrfSubmit {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: var(--primary-10, #4b8bbe);
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px;
+  width: 145px;
+  float: inline-end;
+}
+.fade.productDtlMdl.modal.show textarea.addTxtCmnt {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-beerus, #e2e2e2);
+  background: var(--main-gohan, #fff);
+  padding: 12px;
+  width: 100%;
+}
+.fade.productDtlMdl.modal.show img.prvImage {
+  padding: 7px;
+  width: 87px;
+  height: 87px;
+  border-radius: 7.463px;
+  background: #fff;
+  box-shadow: 0px 0px 0.537px 0px rgba(0, 0, 0, 0.4),
+    0px 4.295px 12.884px -3.221px rgba(0, 0, 0, 0.16);
+}
+.fade.productDtlMdl.modal.show button.cancelPrv {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 145px;
+  padding: 8px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-trunks, #595d62);
+  background-color: transparent;
+}
+.fade.productDtlMdl p.priceThis {
+  color: var(--secondary-30, #4e46b4);
+  font-family: Barlow Semi Condensed;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.fade.productDtlMdl p.dtlThisPrdt {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1.125rem;
+  margin: 0 0 8px;
+}
+.fade.productDtlMdl img.BrandThis {
+  padding: 4px;
+  max-width: 75px;
+  border-radius: 4px;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16);
+}
+.viewReslt.show.dropdown .dropdown-menu.show {
+  /* transform: translate(-17px, -328px) !important; */
+  width: 100%;
+  position: static !important;
+  overflow: hidden;
+  transform: translate(0px, 0) !important;
+}
+
+.viewReslt.show.dropdown button.btnCloseDrp {
+  background-color: transparent;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+}
+.viewReslt.modal p.rmvPrdct {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.viewReslt.show.dropdown span.rmvPrfTagg {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--text-100, #333);
+  padding: 8px 16px;
+}
+
+.viewReslt.modal button.btnrgtn {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  width: 145px;
+  padding: 8px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-trunks, #595d62);
+  background-color: transparent;
+}
+.viewReslt.modal p.tellResn {
+  color: var(--text-100, #333);
+  font-size: 1.125rem;
+  font-family: "Andika", sans-serif;
+  margin: 0 0 12px;
+}
+.viewReslt.modal textarea.addTxtCmnt {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  border: 1px solid var(--main-beerus, #e2e2e2);
+  background: var(--main-gohan, #fff);
+  padding: 12px;
+  width: 100%;
+}
+.yourWardrobe .prfrncResult button.resultImg img.productImg {
+  width: 140px;
+  height: 140px;
+}
+.prfrncResult .prfrncResultShow button.btnRemoveClose {
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16);
+  padding: 2px;
+  display: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  border: none;
+}
+.prfrncResult .prfrncResultShow:hover button.btnRemoveClose {
+  display: block;
+}
+.prfrncResult .prfrncResultShow button.btnFavourite {
+  border-radius: 8px;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16);
+  padding: 4px 12px;
+  color: var(--Text-100, #333);
+  font-size: 14px;
+  font-family: "Andika", sans-serif;
+  border: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+  left: 4px;
+  display: none;
+}
+.prfrncResult .prfrncResultShow:hover button.btnFavourite {
+  display: block;
+}
+.givenPrefrnc .btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: initial;
+  background-color: white;
+  border-color: white;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.givenPrefrnc .dropdown-menu.show {
+  inset: 5px auto auto 27px !important;
+}
+.rstLinksDrp.show.dropdown .dropdown-menu.show {
+  border-radius: var(--interactive-border-radius-radius-i-md, 12px);
+  background: var(--main-gohan, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+.prfAttached.show.dropdown .dropdown-menu.show {
+  border-radius: var(--interactive-border-radius-radius-i-md, 12px);
+  background: var(--main-gohan, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+.rstLinksDrp.show.dropdown a.dropdown-item {
+  font-size: 1rem;
+  color: var(--Accent, #f06292);
+  font-family: Barlow Semi Condensed;
+  font-weight: 700;
+}
+.rstLinksDrp,
+.prfAttached.show.dropdown .dropdown-item:active {
+  background-color: var(--bs-dropdown-link-hover-bg);
+}
+.prfAttached.show.dropdown a.dropdown-item p {
+  display: flex;
+  align-items: center;
+}
+
+.prfAttached.show.dropdown a.dropdown-item span.prfSrNmbr {
+  color: var(--text-80, #5c5c5c);
+  text-align: center;
+  font-family: Barlow Semi Condensed;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  background: var(--text-10, #ebebeb);
+  padding: 4px 13px;
+}
+.prfAttached.show.dropdown a.dropdown-item span.prfNameCmn {
+  color: var(--text-60, #858585);
+  text-align: center;
+  font-family: Barlow Semi Condensed;
+  font-size: 1rem;
+  margin: 0 8px 0 0;
+}
+.prfAttached.show.dropdown a.dropdown-item span.prfProductCmn {
+  color: var(--Accent, #f06292);
+  text-align: center;
+  font-family: Barlow Semi Condensed;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.prfAttached.show.dropdown a.dropdown-item span.prColourCmn {
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+ 
+  display: inline-block;
+}
+.prfAttached .dropdown-menu.show {
+  inset: 5px auto auto 75px !important;
+  z-index: 20;
+  transform: translate(-50%, 45%) !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 70px;
+}
+/* ----------UserSidebar--------  */
+.UserSidebar {
+  border-radius: 20px;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 12px 12px -6px rgba(0, 0, 0, 0.16);
+  width: 63px;
+  margin: 60px 0 0 30px;
+  padding: 20px 8px;
+  text-align: center;
+  transition: width 0.2s ease-in-out;
+  z-index: 99;
+  position: relative;
+}
+.UserSidebar:hover {
+  width: 180px;
+}
+.UserSidebar ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserSidebar ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.UserSidebar ul li span.prnName {
+  display: block;
+  color: var(--primary-10, #5c5c5c);
+  font-size: 14px;
+  font-family: "Andika", sans-serif;
+  margin: 0 0 0 8px;
+  display: none;
+}
+.UserSidebar:hover ul li span.prnName {
+  display: block;
+}
+.UserSidebar ul li span.sameStl {
+  color: var(--primary-10, #4b8bbe);
+  font-size: 14px;
+  font-family: "Andika", sans-serif;
+  margin: 0 0 0 8px;
+  display: none;
+}
+.UserSidebar:hover ul li span.sameStl {
+  display: block;
+}
+.UserSidebar ul li.firstUr {
+  padding: 12px;
+  border-radius: var(--interactive-border-radius-radius-i-sm, 8px);
+  background: linear-gradient(135deg, #4e46b4 22.57%, #4b8bbe 124.39%);
+  width: 100%;
+}
+.UserSidebar ul .innerOrder {
+  border-radius: var(--paddings-gaps-p-4, 16px);
+  background: var(--primary-shades-10, #eff7fc);
+  align-items: start;
+}
+.UserSidebar ul .innerOrder li {
+  padding: 12px;
+}
+.showDtl.dropdown button#dropdown-basic {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.showDtl.dropdown .dropdown-menu.show {
+  transform: translate(161px, -20px) !important;
+  border-radius: var(--interactive-border-radius-radius-i-md, 12px);
+  background: var(--main-gohan, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+  padding: 4px;
+}
+.showDtl.Notification.dropdown .dropdown-menu.show {
+  transform: translate(167px, -100%) !important;
+}
+.dropdown-menu.show .wrdpss {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100px;
+}
+.dropdown-menu.show p.whoDay {
+  color: var(--text-40, #adadad);
+  font-family: Barlow Semi Condensed;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 16px;
+}
+.showDtl.dropdown a.dropdown-item {
+  color: var(--text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+}
+.showDtl.dropdown a.dropdown-item:active {
+  background-color: #3a81ba;
+  color: white;
+}
+/* .showDtl.Notification.show.dropdown */
+
+.showDtl.Notification.dropdown .dropdown-menu.show {
+  width: 500px;
+}
+.Notification.dropdown .ntfHdr p.hding {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.Notification.dropdown p.newNft {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1rem;
+}
+.Notification.dropdown span.newNft {
+  color: var(--Text-80, #5c5c5c);
+  font-family: Barlow Semi Condensed;
+  font-size: 14px;
+}
+.Notification.dropdown span strong.NftNmbr {
+  color: var(--Accent, #f06292);
+  font-weight: 700;
+}
+.Notification.dropdown h4.tagNft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  font-size: 12px;
+  color: white;
+  border-radius: 40px;
+  background: var(--Accent, #f06292);
+}
+.Notification.dropdown a.notificationNew.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  border-radius: var(--paddings-gaps-p-4, 16px);
+  background: var(--Primary-Shades-10, #eff7fc);
+  margin: 8px 0;
+}
+.Notification.dropdown .Notifctns {
+  padding: 0 12px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 230px;
+}
+.Notification.dropdown .NoNotifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.d-flex.flex-you {
+  margin-right: 137px;
+}
+.showDtl.dropdown a.profiledrp.dropdown-item {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px;
+}
+.toast.successfullToast.show {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: var(--Surface-border-radius---radius-s-sm, 8px);
+  background: var(--Main-gohan, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+}
+.toast.successfullToast p.savedwrdb {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+}
+.toast.successfullToast p.savedwrdb span {
+  color: var(--Accent, #f06292);
+}
+.toast.successfullToast button.svdEdtWrdb {
+  border-radius: var(--Interactive-border-radius---radius-i-xs, 4px);
+  background: var(--Primary-Shades-20, #e6eff6);
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.toast.EditSavedToast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  background-color: transparent;
+  padding: 0;
+  max-width: fit-content;
+  border: none;
+  box-shadow: none;
+  border-radius: 30px;
+}
+.toast.EditSavedToast p.prdtAdded {
+  color: var(--Accent, #f06292);
+  font-family: "Andika", sans-serif;
+  font-size: 1.25rems;
+  margin: 20px 0 0;
+}
+.Toastoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the background color and transparency as needed */
+  z-index: 9998; /* Place the overlay beneath the toast but above the content */
+}
+/* -----------Home---------- */
+.HomeBox {
+  height: calc(100dvh - 200px);
+}
+.HomeBox .gif-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+}
+.HomeBox .gif-image img {
+  opacity: 0.2;
+}
+.sortedBy .verticalLine {
+  border: none;
+  border-left: 2px solid #000; /* Change the color as needed */
+  height: 23px; /* Set the height of the vertical line */
+  display: inline-block;
+  margin: 0 20px;
+}
+.sortedBy {
+  padding: 0 30px 0 0;
+}
+.sortedBy p {
+  color: var(--Text-100, #333);
+  font-size: 1rem;
+  font-family: "Andika", sans-serif;
+}
+.sortedBy button.btnrgtn {
+  width: 120px;
+}
+button.btnRemoveEvry {
+  color: var(--Alert, #962d2d);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: var(--Interactive-border-radius---radius-i-sm, 8px);
+  border: 1px solid var(--Alert, #962d2d);
+  padding: 8px 12px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.btnRemoveEvry:hover {
+  color: var(--Alert, #962d2d);
+  border: 1px solid var(--Alert, #962d2d);
+
+  background-color: transparent;
+}
+.HomeBox .HomeCard {
+  position: relative;
+  padding: 20px;
+  border-radius: var(--paddings-gaps-p-4, 16px);
+  background: var(--White, #fff);
+  z-index: 9;
+  margin-bottom: 11%;
+}
+.HomeBox .HomeCard img.SmlProduct {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+.HomeBox .HomeCard p.WrdbNmbr {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1.124rem;
+}
+.HomeBox .HomeCard .BottomCurveImg img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}
+.HomeBox .HomeCard .CreatedTime button.BtnTaggCstm {
+  border-radius: 20px;
+  background: var(--Secondary-Shades-10, #eeedfe);
+  padding: 4px 12px;
+  border: none;
+}
+.HomeBox .HomeCard .CreatedTime button.BtnTaggCstm span {
+  background: linear-gradient(90deg, #4e46b4 0%, #ba4788 96.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.HomeBox .HomeCard .CreatedTime p.AgaoTime {
+  color: var(--Text-100, #333);
+  font-family: Barlow Semi Condensed;
+  font-size: 12px;
+}
+.HomeBox .MainCardBox {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  height: calc(100dvh - 350px);
+  padding: 0 16px 0 0px;
+}
+.HomeFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px 40px 0px 0px;
+  background: #fff;
+  padding: 37px 0;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.HomeFooter h3 {
+  font-size: 1.75rem;
+  background: linear-gradient(90deg, #4e46b4 -18.44%, #4b8bbe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 20px 0 0;
+}
+.crtWrdbMain .BlurSvg img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 363px;
+  left: 0;
+  pointer-events: none;
+}
+.twoOption.show.dropdown .dropdown-menu.show {
+  inset: 0px 0 auto auto !important;
+  border-radius: var(--Interactive-border-radius---radius-i-md, 12px);
+  background: var(--Main-gohan, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+}
+.twoOption.show.dropdown .dropdown-item {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+}
+.twoOption.show.dropdown .dropdown-item:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button.btnFeedBack {
+  color: var(--White, #fff);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: var(--Interactive-border-radius---radius-i-sm, 8px);
+  background: var(--secondary-30, #4e46b4);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 20px -2px rgba(0, 0, 0, 0.38);
+  position: fixed;
+  bottom: 140px;
+  right: 26px;
+  z-index: 9999;
+}
+.NoHaveWardrobe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100dvh - 130px);
+}
+.OverView .swiper-slide.swiper-slide-active {
+  transform: scale(1.3);
+}
+.OverView .swiper-backface-hidden .swiper-slide {
+  transform: scale(1);
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 12px 12px -6px rgba(0, 0, 0, 0.16);
+}
+.favoritsProducts .detailBox p.priceThis {
+  color: var(--secondary-30, #4e46b4);
+  font-family: Barlow Semi Condensed;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.favoritsProducts .detailBox p.dtlThisPrdt {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 1.125rem;
+  margin: 0 0 8px;
+}
+.favoritsProducts .detailBox img.BrandThis {
+  padding: 10px;
+  max-width: 75px;
+  border-radius: 4px;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 6px 6px -6px rgba(0, 0, 0, 0.16);
+}
+.favoritsProducts .detailBox strong {
+  color: var(--Text-100, #333);
+  font-family: Barlow Semi Condensed;
+  font-size: 12px;
+  font-weight: 600;
+}
+.favoritsProducts .detailBox p.yourCommentDtl {
+  color: var(--Text-80, #5c5c5c);
+  font-family: Barlow Semi Condensed;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+button.buyProduct {
+  color: var(--White, #fff);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: var(--Interactive-border-radius---radius-i-sm, 8px);
+  background: var(--primary-10, #4b8bbe);
+}
+.favoritsProducts {
+  border-radius: var(--paddings-gaps-p-4, 16px);
+  border: 1px solid var(--Accent, #f06292);
+  background: var(--Main-gohan, #fff);
+  padding: 16px 20px 16px 0px;
+}
+.swiper.FavoritProductSwiper .swiper-slide {
+  text-align: center;
+}
+.swiper.FavoritProductSwiper .swiper-button-prev:after {
+  font-size: 16px;
+  color: #333;
+}
+.swiper.FavoritProductSwiper .swiper-button-next:after {
+  font-size: 16px;
+  color: #333;
+}
+img.arrowSvg {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+img.arrowSvg:hover {
+  transform: rotate(180deg); /* Rotate the arrow by 180 degrees on hover */
+}
+/* .FvrtProductBox button.btnFeedBack {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+
+img.sideBarIcon:hover {
+  filter: brightness(0) invert(1); /* Inverts the colors on hover */
+}
+
+img.sideBarIcon:active {
+  filter: brightness(0) invert(1); /* Reduces brightness on active state */
+}
+
+button.btn-mblPrfl {
+  border-radius: var(--Interactive-border-radius---radius-i-sm, 8px);
+  background: var(--White, #fff);
+  padding: 12px;
+  border: none;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 12px 12px -6px rgba(0, 0, 0, 0.16);
+}
+p.totlgnrteprdt {
+  font-size: 1rem;
+}
+.prfrncResult {
+  position: relative;
+  margin-bottom: 60px;
+}
+.SortBy.dropdown .dropdown-menu.show {
+  border-radius: var(--Interactive-border-radius---radius-i-md, 12px);
+  background: var(--Main-gohan, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+    0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+}
+.SortBy.dropdown .dropdown-menu.show a.dropdown-item {
+  color: var(--Text-100, #333);
+  font-family: "Andika", sans-serif;
+  font-size: 14px;
+  min-width: 190px;
+}
+p.prdctName.mb-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+/* ------------responsive-section------------- */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+  .HomeBox .HomeCard {
+    padding: 15px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 80%;
+  }
+  button.btnFeedBack {
+    bottom: 110px;
+  }
+  .BasedUponPrfrnc p.discptn {
+    font-size: 1.8rem;
+  }
+  .SortBy.dropdown .dropdown-menu.show a.dropdown-item {
+    font-size: 2rem;
+  }
+  .yourWardrobe button.saveWrdrb {
+    font-size: 1.225rem;
+  }
+  p.totlgnrteprdt {
+    font-size: 1.4rem;
+  }
+  button.btnPrimary {
+    font-size: 1.6rem;
+  }
+  .form-control {
+    font-size: 1.6rem;
+  }
+  button.btnsign {
+    font-size: 1.6rem;
+  }
+  .btncontinue {
+    font-size: 1.6rem;
+  }
+  .cardBox h2 {
+    margin-bottom: 30px;
+  }
+  .ChooseCategory .topdiv {
+    justify-content: center;
+    margin: 0 auto 30px;
+  }
+  .ChooseCategory .category .firstSlide p {
+    position: absolute;
+    color: #333;
+    font-weight: 700;
+    font-size: 2rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .signbox1 {
+    border-radius: 20px 0px 0px 20px;
+    padding: 4rem 30px 4rem;
+    background-color: white;
+    background-image: none;
+    text-align: center;
+  }
+  .signbox1 form {
+    width: 100%;
+    padding: 30px 0 0;
+    background: none;
+    margin: 0 auto;
+  }
+  .signbox1 form .havean {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .modal.loginModal .modal-content {
+    border-radius: 0 0 20px 20px;
+    background: white;
+    height: 99.6dvh;
+    margin: 0 0 0 10%;
+  }
+  .loginModal form {
+    padding: 10px 0px 0;
+  }
+  .loginModal .modal-header .btn-close {
+    margin: inherit !important;
+  }
+  .loginModal img.bgMblLogin {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .signbox1 img.bgMblLogin {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .loginModal .modal-dialog {
+    right: -100%;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+  .loginModal.show .modal-dialog {
+    right: -8px;
+    transition: all 0.5s;
+  }
+  .crtWrdbHeader .WrdbHeaderBox {
+    margin: 40px auto 0;
+  }
+  .socialGenrat.card .card-body img.inptlogo {
+    top: 18px;
+  }
+  .guestgenrete-Form {
+    padding: 40px 7px 0 0;
+  }
+  .signbox1 form .havean p {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  .btncontinue {
+    font-size: 1.6rem;
+  }
+  .accordion .card-header p.prvd {
+    font-size: 1.6rem;
+  }
+  .preferencesGenrat.card .Gender strong {
+    font-size: 1.6rem;
+  }
+  .prfrnceNested .nestedAcrdn label.form-label {
+    font-size: 1.6rem;
+  }
+  .givenPrefrnc p.imageURL {
+    font-size: 1.6rem;
+  }
+  .givenPrefrnc p.muchPrfrnc {
+    font-size: 1.6rem;
+  }
+  .yourWardrobe p.gnrtDiscrptn {
+    font-size: 1.6rem;
+  }
+  .fade.productDtlMdl.modal.show p.infoDis {
+    font-size: 1.6rem;
+  }
+  .rstLinksDrp.show.dropdown a.dropdown-item {
+    font-size: 1.6rem;
+  }
+  .prfAttached.show.dropdown a.dropdown-item span.prfSrNmbr {
+    font-size: 1.6rem;
+  }
+  .prfAttached.show.dropdown a.dropdown-item span.prfNameCmn {
+    font-size: 1.6rem;
+  }
+  .prfAttached.show.dropdown a.dropdown-item span.prfProductCmn {
+    font-size: 1.6rem;
+  }
+  .Notification.dropdown p.newNft {
+    font-size: 1.6rem;
+  }
+  .sortedBy p {
+    font-size: 1.6rem;
+  }
+  button.btnFeedBack {
+    font-size: 1.6rem;
+  }
+  button.btnrgtn {
+    font-size: 1.225rem;
+  }
+  button.btnPrfSubmit {
+    font-size: 1.225rem;
+  }
+  .signbox1 form .havean button {
+    font-size: 1.225rem;
+  }
+  .welcomHeader .makeAccount button:nth-child(2) {
+    font-size: 1.225rem;
+  }
+  .welcomHeader .makeAccount button:nth-child(3) {
+    font-size: 1.225rem;
+  }
+  .loveCrd p.discription {
+    font-size: 1.225rem;
+  }
+  .preferencesGenrat.card .Gender button {
+    font-size: 1.225rem;
+  }
+  .preferencesGenrat.card .card-header button.btnRemove {
+    font-size: 1.225rem;
+  }
+  .prfrnceNested .nestedAcrdn input.searchInput.form-control {
+    font-size: 1.225rem;
+  }
+  .prfrnceNested .nestedAcrdn input.selectSize.form-control {
+    font-size: 1.225rem;
+  }
+  button.addPerafrence {
+    font-size: 1.225rem;
+  }
+  .yourWardrobe button.regenrete {
+    font-size: 1.225rem;
+  }
+  .fade.productDtlMdl.modal.show .dtlTagg span.tagg {
+    font-size: 1.225rem;
+  }
+  .fade.productDtlMdl.modal.show button.btnPrfSubmit {
+    font-size: 1.225rem;
+  }
+  .fade.productDtlMdl.modal.show button.cancelPrv {
+    font-size: 1.225rem;
+  }
+  .viewReslt.show.dropdown span.rmvPrfTagg {
+    font-size: 1.225rem;
+  }
+  .viewReslt.modal button.btnrgtn {
+    font-size: 1.225rem;
+  }
+  .prfrncResult .prfrncResultShow button.btnFavourite {
+    font-size: 1.225rem;
+  }
+  .UserSidebar ul li span.prnName {
+    font-size: 1.225rem;
+  }
+  .UserSidebar ul li span.sameStl {
+    font-size: 1.225rem;
+  }
+  .showDtl.dropdown a.dropdown-item {
+    font-size: 1.225rem;
+  }
+  .Notification.dropdown span.newNft {
+    font-size: 1.225rem;
+  }
+  .showDtl.dropdown a.profiledrp.dropdown-item {
+    font-size: 1.225rem;
+  }
+  .toast.successfullToast p.savedwrdb {
+    font-size: 1.225rem;
+  }
+  button.btnRemoveEvry {
+    font-size: 1.225rem;
+  }
+  .HomeBox .HomeCard .CreatedTime button.BtnTaggCstm span {
+    font-size: 1.225rem;
+  }
+  .twoOption.show.dropdown .dropdown-item {
+    font-size: 1.225rem;
+  }
+  button.buyProduct {
+    font-size: 1.225rem;
+  }
+  .loveCrd .RatingBox h3 {
+    font-size: 1.05rem;
+  }
+  .loveCrd .fctr-Brand p {
+    font-size: 1.05rem;
+  }
+  .dropdown-menu.show p.whoDay {
+    font-size: 1.05rem;
+  }
+  .Notification.dropdown h4.tagNft {
+    font-size: 1.05rem;
+  }
+  .HomeBox .HomeCard .CreatedTime p.AgaoTime {
+    font-size: 1.05rem;
+  }
+  .favoritsProducts .detailBox strong {
+    font-size: 1.05rem;
+  }
+  .favoritsProducts .detailBox p.yourCommentDtl {
+    font-size: 1.05rem;
+  }
+  .givenPrefrnc .dropdown-menu.show {
+    inset: 8px auto auto 42px !important;
+  }
+  .prfAttached .dropdown-menu.show {
+    transform: translate(3px, 52px) !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 300px;
+  }
+  .swiper.mySwiperRst .swiper-button-next {
+    left: 50%;
+    transform: translate(80%, 460%);
+  }
+  .swiper.mySwiperRst .swiper-button-next::after {
+    font-size: x-large;
+  }
+  .swiper.mySwiperRst .swiper-button-prev {
+    left: 50%;
+    transform: translate(-185%, 460%);
+  }
+  .swiper.mySwiperRst .swiper-button-prev::after {
+    font-size: x-large;
+  }
+  .fade.productDtlMdl.modal.show p.tellResn {
+    font-size: 2.125rem;
+  }
+  .crtWrdbMain {
+    padding-bottom: 80px;
+  }
+  .UserSidebar {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    padding: 1px 8px;
+    width: auto;
+    bottom: 15px;
+  }
+  .UserSidebar:hover {
+    width: auto;
+  }
+  .UserSidebar ul .innerOrder {
+    padding: 5px;
+  }
+  .UserSidebar ul li.active {
+    background-color: #4d66b9;
+    border-radius: 8px;
+  }
+
+  .UserSidebar:hover ul li span.sameStl {
+    display: none;
+  }
+  .UserSidebar:hover ul li span.prnName {
+    display: none;
+  }
+  .showDtl.dropdown .dropdown-menu.show {
+    transform: translate(-60px, -241px) !important;
+    border-radius: var(--interactive-border-radius-radius-i-md, 12px);
+    background: var(--main-gohan, #fff);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+      0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+    padding: 4px;
+  }
+
+  .Notification.dropdown .Notifctns {
+    padding: 0 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 230px;
+  }
+  .Notification.dropdown a.notificationNew.dropdown-item {
+    padding: 20px 10px;
+  }
+  .showDtl.Notification.dropdown .dropdown-menu.show {
+    transform: translate(-317px, -388px) !important;
+    border-radius: var(--interactive-border-radius-radius-i-md, 12px);
+    background: var(--main-gohan, #fff);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+      0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+    padding: 4px;
+  }
+
+  .showDtl.Notification.dropdown .dropdown-menu.show {
+    width: 500px;
+  }
+  .UserSidebar ul .innerOrder li {
+    padding: 8px;
+  }
+  .showDtl.mainProfile.dropdown .dropdown-menu.show {
+    transform: translate(-80px, -151px) !important;
+  }
+  .UserSidebar ul li.firstUr {
+    padding: 8px;
+    min-height: 41px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .swiper.FavoritProductSwiper {
+    max-width: 260px;
+  }
+  .favoritsProducts {
+    padding: 16px 20px 16px 20px;
+  }
+  button.btnPrfSubmit {
+    width: 110px;
+  }
+  button.btnrgtn {
+    width: 110px;
+  }
+  .BasedUponPrfrnc p.discptn {
+    font-size: 1.8rem;
+  }
+  button.btnRemoveEvry {
+    padding: 6px;
+  }
+  .sortedBy {
+    padding: 0 15px 0 5px;
+  }
+  .SortBy.dropdown {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  .HomeBox .HomeCard img.SmlProduct {
+    border-radius: 87.5px;
+    background: #fff;
+    box-shadow: 0px 0px 1.458px 0px rgba(0, 0, 0, 0.4),
+      0px 8.75px 8.75px -8.75px rgba(0, 0, 0, 0.16);
+    max-width: 65px;
+    width: 100%;
+  }
+  .mblCol.col-md-4 {
+    width: inherit;
+    margin: 0 -15px;
+  }
+  button.btnFeedBack {
+    margin: 0;
+    padding: 8px 12px;
+  }
+  .HomeBox .MainCardBox {
+    height: calc(100dvh - 387px);
+    padding: 0 5px 0 5px;
+  }
+  .yourWardrobe button.saveWrdrb {
+    font-size: 1.575rem;
+  }
+  .viewReslt.modal p.rmvPrdct {
+    font-size: 2rem;
+  }
+  .viewReslt.modal p.tellResn {
+    font-size: 2rem;
+  }
+  .viewReslt.modal textarea.addTxtCmnt {
+    font-size: 2rem;
+  }
+  .fade.productDtlMdl.modal.show .dtlTagg span.tagg {
+    padding: 5px 10px;
+  }
+  .fade.productDtlMdl.modal.show p.tellResn {
+    font-size: 2.125rem;
+  }
+  button.btnPrimary {
+    font-size: 1.8rem;
+  }
+  .form-control {
+    font-size: 1.8rem;
+  }
+  .btncontinue {
+    font-size: 1.8rem;
+  }
+  .signbox1 img.bgMblLogin {
+    bottom: 5%;
+  }
+  .loginModal img.bgMblLogin {
+    bottom: 5%;
+  }
+  .socialGenrat.card .card-body img.inptlogo {
+    top: 16px;
+    left: 20px;
+  }
+  .accordion .card-header button {
+    background-color: transparent !important;
+    text-align: center;
+  }
+
+  button.btnsign {
+    font-size: 1.8rem;
+  }
+  .signbox1 form .havean p {
+    font-size: 1.8rem;
+  }
+  .signbox1 form .havean button {
+    font-size: 1.75;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  .accordion .imageGenrat.card .card-body button.btUploadImg p {
+    font-size: 1.8rem;
+  }
+  .btncontinue {
+    font-size: 1.8rem;
+  }
+  .accordion .card-header p.prvd {
+    font-size: 1.8rem;
+  }
+  .preferencesGenrat.card .Gender strong {
+    font-size: 1.8rem;
+  }
+  .prfrnceNested .nestedAcrdn label.form-label {
+    font-size: 1.8rem;
+  }
+  .givenPrefrnc p.imageURL {
+    font-size: 1.8rem;
+  }
+  .givenPrefrnc p.muchPrfrnc {
+    font-size: 1.8rem;
+  }
+  .yourWardrobe p.gnrtDiscrptn {
+    font-size: 1.8rem;
+  }
+  .fade.productDtlMdl.modal.show p.infoDis {
+    font-size: 1.8rem;
+  }
+  .rstLinksDrp.show.dropdown a.dropdown-item {
+    font-size: 1.8rem;
+  }
+  .prfAttached.show.dropdown a.dropdown-item span.prfSrNmbr {
+    font-size: 1.8rem;
+  }
+  .prfAttached.show.dropdown a.dropdown-item span.prfNameCmn {
+    font-size: 1.8rem;
+  }
+  .prfAttached.show.dropdown a.dropdown-item span.prfProductCmn {
+    font-size: 1.8rem;
+  }
+  .Notification.dropdown p.newNft {
+    font-size: 1.8rem;
+  }
+  .sortedBy p {
+    font-size: 1.8rem;
+  }
+  button.btnFeedBack {
+    font-size: 1.8rem;
+  }
+  button.btnrgtn {
+    font-size: 1.575rem;
+  }
+  button.btnPrfSubmit {
+    font-size: 1.575rem;
+  }
+  .signbox1 form .havean button {
+    font-size: 1.575rem;
+  }
+  .welcomHeader .makeAccount button:nth-child(2) {
+    font-size: 1.575rem;
+  }
+  .welcomHeader .makeAccount button:nth-child(3) {
+    font-size: 1.575rem;
+  }
+  .loveCrd p.discription {
+    font-size: 1.575rem;
+  }
+  .preferencesGenrat.card .Gender button {
+    font-size: 1.575rem;
+  }
+  .preferencesGenrat.card .card-header button.btnRemove {
+    font-size: 1.575rem;
+  }
+  .prfrnceNested .nestedAcrdn input.searchInput.form-control {
+    font-size: 1.575rem;
+  }
+  .prfrnceNested .nestedAcrdn input.selectSize.form-control {
+    font-size: 1.575rem;
+  }
+  button.addPerafrence {
+    font-size: 1.575rem;
+  }
+  .yourWardrobe button.regenrete {
+    font-size: 1.575rem;
+  }
+  .fade.productDtlMdl.modal.show .dtlTagg span.tagg {
+    font-size: 1.575rem;
+  }
+  .fade.productDtlMdl.modal.show button.btnPrfSubmit {
+    font-size: 1.575rem;
+  }
+  .fade.productDtlMdl.modal.show button.cancelPrv {
+    font-size: 1.575rem;
+  }
+  .viewReslt.show.dropdown span.rmvPrfTagg {
+    font-size: 1.575rem;
+  }
+  .viewReslt.modal button.btnrgtn {
+    font-size: 1.575rem;
+  }
+  .prfrncResult .prfrncResultShow button.btnFavourite {
+    font-size: 1.575rem;
+  }
+  .UserSidebar ul li span.prnName {
+    font-size: 1.575rem;
+  }
+  .UserSidebar ul li span.sameStl {
+    font-size: 1.575rem;
+  }
+  .showDtl.dropdown a.dropdown-item {
+    font-size: 1.575rem;
+  }
+  .Notification.dropdown span.newNft {
+    font-size: 1.575rem;
+  }
+  .showDtl.dropdown a.profiledrp.dropdown-item {
+    font-size: 1.575rem;
+  }
+  .toast.successfullToast p.savedwrdb {
+    font-size: 1.575rem;
+  }
+  button.btnRemoveEvry {
+    font-size: 1.575rem;
+  }
+  .HomeBox .HomeCard .CreatedTime button.BtnTaggCstm span {
+    font-size: 1.575rem;
+  }
+  .twoOption.show.dropdown .dropdown-item {
+    font-size: 1.575rem;
+  }
+  button.buyProduct {
+    font-size: 1.575rem;
+  }
+  .loveCrd .RatingBox h3 {
+    font-size: 1.35rem;
+  }
+  .loveCrd .fctr-Brand p {
+    font-size: 1.35rem;
+  }
+  .dropdown-menu.show p.whoDay {
+    font-size: 1.35rem;
+  }
+  .Notification.dropdown h4.tagNft {
+    font-size: 1.35rem;
+  }
+  .HomeBox .HomeCard .CreatedTime p.AgaoTime {
+    font-size: 1.35rem;
+  }
+  .favoritsProducts .detailBox strong {
+    font-size: 1.35rem;
+  }
+  .favoritsProducts .detailBox p.yourCommentDtl {
+    font-size: 1.35rem;
+  }
+  .fade.productDtlMdl.modal.show p.rmvPrdct {
+    font-size: 1.8rem;
+  }
+  .showDtl.Notification.dropdown .dropdown-menu.show {
+    transform: translate(-280px, -375px) !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+  img.starIconHdr {
+    width: 100px;
+  }
+  .showDtl.Notification.dropdown .dropdown-menu.show {
+    width: 295px;
+  }
+  .showDtl.Notification.dropdown .dropdown-menu.show {
+    transform: translate(-218px, -368px) !important;
+  }
+  .yourWardrobe .youWrdrbInner {
+    padding: 10px 10px;
+  }
+  .yourWardrobe {
+    padding: 20px;
+  }
+  .yourWardrobe button.saveWrdrb {
+    font-size: 1.6rem;
+  }
+  .yourWardrobe button.saveWrdrb {
+    width: 130px;
+    padding: 8px 8px;
+  }
+  .yourWardrobe button.regenrete {
+    padding: 5px 8px;
+  }
+  p.totlgnrteprdt {
+  }
+  .socialGenrat.card .card-body img.inptlogo {
+    top: 11px;
+  }
+  .favoritsProducts .detailBox p.yourCommentDtl {
+    font-size: 1.5rem;
+  }
+  .favoritsProducts .detailBox strong {
+    font-size: 1.5rem;
+  }
+  .HomeBox .HomeCard .CreatedTime p.AgaoTime {
+    font-size: 1.5rem;
+  }
+  .Notification.dropdown h4.tagNft {
+    font-size: 1.5rem;
+  }
+  .dropdown-menu.show p.whoDay {
+    font-size: 1.5rem;
+  }
+  .loveCrd .fctr-Brand p {
+    font-size: 1.5rem;
+  }
+  .loveCrd .RatingBox h3 {
+    font-size: 1.5rem;
+  }
+  button.buyProduct {
+    font-size: 1.75rem;
+  }
+  .twoOption.show.dropdown .dropdown-item {
+    font-size: 1.75rem;
+  }
+  .HomeBox .HomeCard .CreatedTime button.BtnTaggCstm span {
+    font-size: 1.75rem;
+  }
+  button.btnRemoveEvry {
+    font-size: 1.75rem;
+  }
+  .toast.successfullToast p.savedwrdb {
+    font-size: 1.75rem;
+  }
+  .showDtl.dropdown a.profiledrp.dropdown-item {
+    font-size: 1.75rem;
+  }
+  .Notification.dropdown span.newNft {
+    font-size: 1.4rem;
+  }
+  .showDtl.dropdown a.dropdown-item {
+    font-size: 1.75rem;
+  }
+  .UserSidebar ul li span.sameStl {
+    font-size: 1.75rem;
+  }
+  .UserSidebar ul li span.prnName {
+    font-size: 1.75rem;
+  }
+  .prfrncResult .prfrncResultShow button.btnFavourite {
+    font-size: 1.75rem;
+  }
+  .viewReslt.modal button.btnrgtn {
+    font-size: 1.75rem;
+  }
+  .viewReslt.show.dropdown span.rmvPrfTagg {
+    font-size: 1.4rem;
+  }
+
+  .fade.productDtlMdl.modal.show button.cancelPrv {
+    font-size: 1.4rem;
+  }
+  .fade.productDtlMdl.modal.show button.btnPrfSubmit {
+    font-size: 1.4rem;
+  }
+  .fade.productDtlMdl.modal.show .dtlTagg span.tagg {
+    font-size: 1.6rem;
+  }
+  .yourWardrobe button.regenrete {
+    font-size: 1.4rem;
+  }
+  button.addPerafrence {
+    font-size: 1.75rem;
+  }
+  .prfrnceNested .nestedAcrdn input.selectSize.form-control {
+    font-size: 1.75rem;
+  }
+  .prfrnceNested .nestedAcrdn input.searchInput.form-control {
+    font-size: 1.75rem;
+  }
+  .preferencesGenrat.card .card-header button.btnRemove {
+    font-size: 1.75rem;
+  }
+  .preferencesGenrat.card .Gender button {
+    font-size: 1.75rem;
+  }
+  .loveCrd p.discription {
+    font-size: 1.75rem;
+  }
+
+  .welcomHeader .makeAccount button:nth-child(3) {
+    font-size: 1.75rem;
+  }
+  .welcomHeader .makeAccount button:nth-child(2) {
+    font-size: 1.75rem;
+  }
+  .signbox1 form .havean button {
+    font-size: 1.75rem;
+  }
+  button.btnPrfSubmit {
+    font-size: 1.6rem;
+  }
+  button.btnrgtn {
+    font-size: 1.6rem;
+  }
+  button.btnFeedBack {
+    font-size: 2rem;
+  }
+  .sortedBy p {
+    font-size: 2rem;
+  }
+  .Notification.dropdown p.newNft {
+    font-size: 1.4rem;
+  }
+  .prfAttached.show.dropdown a.dropdown-item span.prfProductCmn {
+    font-size: 2rem;
+  }
+
+  .prfAttached.show.dropdown a.dropdown-item span.prfSrNmbr {
+    font-size: 2rem;
+  }
+  .rstLinksDrp.show.dropdown a.dropdown-item {
+    font-size: 1.5rem;
+  }
+  .fade.productDtlMdl.modal.show p.infoDis {
+    font-size: 1.6rem;
+  }
+  .yourWardrobe p.gnrtDiscrptn {
+    font-size: 2rem;
+  }
+  .givenPrefrnc p.muchPrfrnc {
+    font-size: 2rem;
+  }
+  .givenPrefrnc p.imageURL {
+    font-size: 2rem;
+  }
+  .prfrnceNested .nestedAcrdn label.form-label {
+    font-size: 2rem;
+  }
+  .preferencesGenrat.card .Gender strong {
+    font-size: 2rem;
+  }
+  .accordion .card-header p.prvd {
+    font-size: 2rem;
+  }
+  button.btnPrimary {
+    font-size: 2rem;
+  }
+  .btncontinue {
+    font-size: 1.6rem;
+  }
+  .signbox1 form .havean button {
+    font-size: 1.75;
+  }
+
+  .signbox1 form .havean p {
+    font-size: 1.8rem;
+  }
+  .signbox1 img.bgMblLogin {
+    bottom: 15%;
+  }
+  .accordion .imageGenrat.card .uplod-progress.progress {
+    width: 120px;
+    height: 6px;
+    --bs-progress-bar-bg: #4b83bd;
+  }
+  .form-control {
+    font-size: 1.8rem;
+  }
+  button.btnsign {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .accordion .imageGenrat.card .card-body button.btUploadImg p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+}
+
+.profile-image-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 2px; 
+  right: 10px; 
+  transform: translate(50%, -20%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: lightgray;
+  color: black;
+}

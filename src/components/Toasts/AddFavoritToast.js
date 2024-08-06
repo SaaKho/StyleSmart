@@ -1,0 +1,27 @@
+import React, { useState } from "react";
+import { Toast } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+const AddFavoritToast = ({ showToast, onClose }) => {
+  return (
+    <div>
+      {showToast && <div className="Toastoverlay"></div>}
+      <Toast
+        className="EditSavedToast bg-white px-4 py-3"
+        show={showToast}
+        onClose={onClose}
+        delay={3000}
+        autohide
+      >
+        <Toast.Body>
+          <div className="d-flex flex-column align-items-center">
+            <img src="/images/larg-heart-add.svg" alt="Add image" />
+            <p className="prdtAdded">Product added to favorties</p>
+          </div>
+        </Toast.Body>
+      </Toast>
+    </div>
+  );
+};
+
+export default AddFavoritToast;
